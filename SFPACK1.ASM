@@ -4,8 +4,8 @@ public	SFastUnPack
 
 	codeseg
 proc	SFastPack	Source, Target, SourceSize
-;Expects: ‘ҐЈ¬Ґ­в Ёбе®¤­ЁЄ , ‘ҐЈ¬Ґ­в б¦ в®Ј® Є®¤ , ђ §¬Ґp Ёбе®¤­ЁЄ 
-;Returns: ђ §¬Ґp б¦ в®Ј® Є®¤ 
+;Expects: РЎРµРіРјРµРЅС‚ РёСЃС…РѕРґРЅРёРєР°, РЎРµРіРјРµРЅС‚ СЃР¶Р°С‚РѕРіРѕ РєРѕРґР°, Р Р°Р·РјРµp РёСЃС…РѕРґРЅРёРєР°
+;Returns: Р Р°Р·РјРµp СЃР¶Р°С‚РѕРіРѕ РєРѕРґР°
 	cld
 	mov	cx, SourceSize
 	mov	es, Target
@@ -68,8 +68,8 @@ Lock1:
 endp
 
 proc	SFastUnPack	Source1, Target1, SourceSize1
-;Expects: ‘ҐЈ¬Ґ­в Ёбе®¤­ЁЄ , ‘ҐЈ¬Ґ­в p §¦ в®Ј® Є®¤ , ђ §¬Ґp Ёбе®¤­ЁЄ 
-;Returns: ђ §¬Ґp p §¦ в®Ј® Є®¤ 
+;Expects: РЎРµРіРјРµРЅС‚ РёСЃС…РѕРґРЅРёРєР°, РЎРµРіРјРµРЅС‚ pР°Р·Р¶Р°С‚РѕРіРѕ РєРѕРґР°, Р Р°Р·РјРµp РёСЃС…РѕРґРЅРёРєР°
+;Returns: Р Р°Р·РјРµp pР°Р·Р¶Р°С‚РѕРіРѕ РєРѕРґР°
 	cld
 	xor	si, si
 	mov	di, si
